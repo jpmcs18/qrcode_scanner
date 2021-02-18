@@ -8,7 +8,7 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="QRCode Scanner"
-        android:icon="@mipmap/qr">
+        android:icon="@mipmap/qrcode_icon_trans">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

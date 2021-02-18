@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+            "outputFile": "C:\\Users\\MIS 3\\source\\repos\\qrcode\\qrcode_scanner\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ICTO JOHN PAUL\\.gradle\\caches\\transforms-2\\files-2.1\\666faf6fa8f5d605653acb28510594a0\\jetified-core-1.9.13\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+                    "source": "C:\\Users\\MIS 3\\.gradle\\caches\\transforms-2\\files-2.1\\d5196f82807cf10576dc4ad88d01c626\\jetified-core-1.9.13\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

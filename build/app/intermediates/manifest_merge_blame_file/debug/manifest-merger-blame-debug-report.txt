@@ -12,17 +12,17 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.CAMERA" />
-15-->[:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
-15-->[:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-62
+15-->[:barcode_scan] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-65
+15-->[:barcode_scan] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-62
 16    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-16-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-83
-16-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-80
+16-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-83
+16-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-80
 17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-17-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-80
-17-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-77
+17-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-80
+17-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-77
 18    <!--
 19 io.flutter.app.FlutterApplication is an android.app.Application that
 20         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -31,30 +31,30 @@
 23         FlutterApplication and put your custom class here.
 24    -->
 25    <application
-25-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:8:5-46:19
+25-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:8:5-46:19
 26        android:name="io.flutter.app.FlutterApplication"
-26-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:9:9-57
+26-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:9:9-57
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.1.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+27-->[androidx.core:core:1.1.0] C:\Users\MIS 3\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
 28        android:debuggable="true"
-29        android:icon="@mipmap/qr"
-29-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:11:9-34
+29        android:icon="@mipmap/qrcode_icon_trans"
+29-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:11:9-49
 30        android:label="QRCode Scanner" >
-30-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:10:9-39
+30-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:10:9-39
 31        <activity
-31-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:12:9-40:20
+31-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:12:9-40:20
 32            android:name="com.example.qrcode_scanner.MainActivity"
-32-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:13:13-41
+32-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:13:13-41
 33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-33-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:16:13-163
+33-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:16:13-163
 34            android:hardwareAccelerated="true"
-34-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:17:13-47
+34-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:17:13-47
 35            android:launchMode="singleTop"
-35-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:14:13-43
+35-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:14:13-43
 36            android:theme="@style/LaunchTheme"
-36-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:15:13-47
+36-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:15:13-47
 37            android:windowSoftInputMode="adjustResize" >
-37-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:18:13-55
+37-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:18:13-55
 38
 39            <!--
 40                 Specifies an Android theme to apply to this Activity as soon as
@@ -63,11 +63,11 @@
 43                 to determine the Window background behind the Flutter UI.
 44            -->
 45            <meta-data
-45-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:23:13-26:17
+45-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:23:13-26:17
 46                android:name="io.flutter.embedding.android.NormalTheme"
-46-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:24:15-70
+46-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:24:15-70
 47                android:resource="@style/NormalTheme" />
-47-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:25:15-52
+47-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:25:15-52
 48            <!--
 49                 Displays an Android View that continues showing the launch screen
 50                 Drawable until Flutter paints its first frame, then this splash
@@ -76,21 +76,21 @@
 53                 Flutter's first frame.
 54            -->
 55            <meta-data
-55-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:32:13-35:17
+55-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:32:13-35:17
 56                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-56-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:33:15-79
+56-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:33:15-79
 57                android:resource="@drawable/launch_background" />
-57-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:34:15-61
+57-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:34:15-61
 58
 59            <intent-filter>
-59-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:36:13-39:29
+59-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:36:13-39:29
 60                <action android:name="android.intent.action.MAIN" />
-60-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:37:17-68
-60-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:37:25-66
+60-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:37:17-68
+60-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:37:25-66
 61
 62                <category android:name="android.intent.category.LAUNCHER" />
-62-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:38:17-76
-62-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:38:27-74
+62-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:38:17-76
+62-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:38:27-74
 63            </intent-filter>
 64        </activity>
 65        <!--
@@ -98,40 +98,40 @@
 67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 68        -->
 69        <meta-data
-69-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:43:9-45:33
+69-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:43:9-45:33
 70            android:name="flutterEmbedding"
-70-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:44:13-44
+70-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:44:13-44
 71            android:value="2" />
-71-->D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:45:13-30
+71-->C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\android\app\src\main\AndroidManifest.xml:45:13-30
 72
 73        <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
-73-->[:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-84
-73-->[:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-81
+73-->[:barcode_scan] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-84
+73-->[:barcode_scan] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-81
 74        <activity
-74-->[:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+74-->[:url_launcher] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
 75            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-75-->[:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+75-->[:url_launcher] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 76            android:exported="false"
-76-->[:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+76-->[:url_launcher] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
 77            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-77-->[:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+77-->[:url_launcher] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
 78
 79        <provider
-79-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-21:20
+79-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-21:20
 80            android:name="androidx.core.content.FileProvider"
-80-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-62
+80-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-62
 81            android:authorities="com.example.qrcode_scanner.fileProvider"
-81-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
+81-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
 82            android:exported="false"
-82-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+82-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
 83            android:grantUriPermissions="true" >
-83-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+83-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
 84            <meta-data
-84-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-20:53
+84-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-20:53
 85                android:name="android.support.FILE_PROVIDER_PATHS"
-85-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-67
+85-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-67
 86                android:resource="@xml/filepaths" />
-86-->[:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-50
+86-->[:open_file] C:\Users\MIS 3\source\repos\qrcode\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-50
 87        </provider>
 88    </application>
 89

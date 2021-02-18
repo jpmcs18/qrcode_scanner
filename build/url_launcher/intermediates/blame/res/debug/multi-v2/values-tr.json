@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\url_launcher\\intermediates\\res\\merged\\debug\\values-tr\\values-tr.xml",
+            "outputFile": "C:\\Users\\MIS 3\\source\\repos\\qrcode\\qrcode_scanner\\build\\url_launcher\\intermediates\\res\\merged\\debug\\values-tr\\values-tr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ICTO JOHN PAUL\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-tr\\values-tr.xml",
+                    "source": "C:\\Users\\MIS 3\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\url_launcher\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
+            "outputFile": "C:\\Users\\MIS 3\\source\\repos\\qrcode\\qrcode_scanner\\build\\url_launcher\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ICTO JOHN PAUL\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-tr\\values-tr.xml",
+                    "source": "C:\\Users\\MIS 3\\.gradle\\caches\\transforms-2\\files-2.1\\a528b13ac93e64cafa3d0480e2c93207\\core-1.1.0\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

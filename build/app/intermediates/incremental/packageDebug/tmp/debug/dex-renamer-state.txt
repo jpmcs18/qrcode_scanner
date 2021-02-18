@@ -1,4 +1,4 @@
-#Thu Feb 18 11:36:16 SGT 2021
-base.0=D\:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Thu Feb 18 17:21:33 SGT 2021
+base.0=C\:\\Users\\MIS 3\\source\\repos\\qrcode\\qrcode_scanner\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
