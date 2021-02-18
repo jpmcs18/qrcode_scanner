@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qrcode_scanner/dbutils.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'models/qrcode.dart';
 
@@ -16,10 +19,10 @@ class Scanner extends StatefulWidget {
 class _ScannerState extends State<Scanner> {
   DBUtils _db = DBUtils.instance;
   QRCode _qrcode = QRCode();
+  Directory pickedDirectory;
 
   final _ctrlTitle = TextEditingController();
   final _ctrlCode = TextEditingController();
-
   @override
   void initState() {
     super.initState();
@@ -34,7 +37,30 @@ class _ScannerState extends State<Scanner> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Scanner'),
+        title: Row(
+          children: [
+            Expanded(child: Text('Scanner')),
+            // IconButton(
+            //     icon: Icon(Icons.file_download),
+            //     onPressed: () {
+            //       _exportQRCode();
+            //     }),
+            IconButton(
+                icon: Icon(Icons.save),
+                onPressed: () {
+                  _saveQRCode();
+                }),
+            IconButton(
+                icon: Icon(Icons.qr_code_scanner),
+                onPressed: () async {
+                  var res = await BarcodeScanner.scan();
+                  setState(() {
+                    _qrcode.code = res;
+                    _ctrlCode.text = res;
+                  });
+                })
+          ],
+        ),
       ),
       body: Card(
         margin: EdgeInsets.all(5),
@@ -47,47 +73,46 @@ class _ScannerState extends State<Scanner> {
                 decoration: InputDecoration(labelText: 'Title'),
                 controller: _ctrlTitle,
                 onChanged: (val) {
-                  setState(() {
+                  setState(() { 
                     _qrcode.title = val;
                   });
                 },
               ),
               TextField(
-                readOnly: true,
-                decoration: InputDecoration(labelText: 'Code'),
-                controller: _ctrlCode,
-                keyboardType: TextInputType.multiline,
-                maxLines: null,
+                  decoration: InputDecoration(labelText: 'Code'),
+                  controller: _ctrlCode,
+                  keyboardType: TextInputType.multiline,
+                  maxLines: 5,
+                  minLines: 1,
+                  onChanged: (val) {
+                    setState(() {
+                      _qrcode.code = val;
+                    });
+                  }),
+              SizedBox(
+                height: 20,
               ),
               Expanded(
-                  child: QrImage(
-                data: _qrcode.code,
-              )),
-              FlatButton(
-                padding: EdgeInsets.all(10),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.blue, width: 2)),
-                onPressed: () {
-                  _saveQRCode();
-                },
-                child: Text('Save'),
-              ),
-              FlatButton(
-                padding: EdgeInsets.all(10),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.blue, width: 2)),
-                onPressed: () async {
-                  var res = await BarcodeScanner.scan();
-                  setState(() {
-                    _qrcode.code = res;
-                    _ctrlCode.text = res;
-                  });
-                },
-                child: Text('Scan'),
+                child: InkWell(
+                  child: QrImage(data: _qrcode.code, padding: EdgeInsets.all(10), backgroundColor: Colors.white),
+                  onTap: () {
+                    _tryBrowse(_qrcode.code);
+                  },
+                ),
               )
             ],
           ),
         ),
       ),
     );
+  }
+
+  _tryBrowse(url) async {
+    if (await canLaunch(url)) {
+      print('asd');
+      await launch(url);
+    }
+    print(url);
   }
 
   _saveQRCode() async {
@@ -105,4 +130,21 @@ class _ScannerState extends State<Scanner> {
 
     Navigator.of(context).pop();
   }
+
+  // _exportQRCode() async {
+  //   // String path = await FilesystemPicker.open(title: 'Open file', context: context, fsType: FilesystemType.folder, pickText: 'Save file to this folder', rootDirectory: await getExternalStorageDirectory());
+
+  //   // print(path);
+  //   var dir = await getApplicationDocumentsDirectory();
+  //   print(dir.path);
+  //   Navigator.of(context).push<FolderPickerPage>(MaterialPageRoute(builder: (BuildContext context) {
+  //     return FolderPickerPage(
+  //         rootDirectory: dir,
+  //         action: (BuildContext context, Directory folder) async {
+  //           print("Picked directory $folder");
+  //           setState(() => pickedDirectory = folder);
+  //           Navigator.of(context).pop();
+  //         });
+  //   }));
+  // }
 }
