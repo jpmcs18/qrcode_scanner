@@ -5,9 +5,12 @@ INJECTED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\ma
 INJECTED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:1:1-47:12
 INJECTED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:1:1-47:12
 MERGED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:1:1-47:12
+MERGED from [:permission] D:\Applications\Flutter Projects\qrcode_scanner\build\permission\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [:sqflite] D:\Applications\Flutter Projects\qrcode_scanner\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] D:\Applications\Flutter Projects\qrcode_scanner\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\dd2ecfcfb369a2f0046b9c1c6d80939e\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [me.dm7.barcodescanner:zxing:1.9.13] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\c15f2e194b51694bbd66aeda415aab9d\zxing-1.9.13\AndroidManifest.xml:2:1-13:12
@@ -23,13 +26,13 @@ MERGED from [androidx.loader:loader:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\cache
 MERGED from [androidx.activity:activity:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\615cab8ad6393a9c868d48761bbea666\activity-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\fea2864cd1008a941e85798b978e31bd\transition-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\42bfbc3fff8c8df307a9cfe522bc299e\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\5bfbe01745d2a29d4e7cd137b17143f4\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\54d8b8735f730e83f07925f758092af3\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -65,6 +68,10 @@ application
 ADDED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:8:5-46:19
 MERGED from [:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:19
 MERGED from [:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:19
+MERGED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-22:19
+MERGED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-22:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [me.dm7.barcodescanner:zxing:1.9.13] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\c15f2e194b51694bbd66aeda415aab9d\zxing-1.9.13\AndroidManifest.xml:11:5-20
@@ -80,7 +87,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\IC
 	android:label
 		ADDED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:10:9-39
 	android:icon
-		ADDED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:11:9-34
 	android:name
 		ADDED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:9:9-57
 activity#com.example.qrcode_scanner.MainActivity
@@ -129,12 +136,18 @@ uses-sdk
 INJECTED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml
+MERGED from [:permission] D:\Applications\Flutter Projects\qrcode_scanner\build\permission\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission] D:\Applications\Flutter Projects\qrcode_scanner\build\permission\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] D:\Applications\Flutter Projects\qrcode_scanner\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] D:\Applications\Flutter Projects\qrcode_scanner\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] D:\Applications\Flutter Projects\qrcode_scanner\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] D:\Applications\Flutter Projects\qrcode_scanner\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-44
+MERGED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\db2388f0fe5e05a7a168e5a9c11e912f\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\dd2ecfcfb369a2f0046b9c1c6d80939e\appcompat-1.0.2\AndroidManifest.xml:20:5-44
@@ -165,6 +178,8 @@ MERGED from [androidx.transition:transition:1.0.0] C:\Users\ICTO JOHN PAUL\.grad
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\fea2864cd1008a941e85798b978e31bd\transition-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\42bfbc3fff8c8df307a9cfe522bc299e\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\42bfbc3fff8c8df307a9cfe522bc299e\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\5bfbe01745d2a29d4e7cd137b17143f4\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
@@ -177,8 +192,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ICTO
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\ICTO JOHN PAUL\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
@@ -227,3 +240,37 @@ activity#de.mintware.barcode_scan.BarcodeScannerActivity
 ADDED from [:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-84
 	android:name
 		ADDED from [:barcode_scan] D:\Applications\Flutter Projects\qrcode_scanner\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-81
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] D:\Applications\Flutter Projects\qrcode_scanner\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-83
+	android:name
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-80
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-77
+provider#androidx.core.content.FileProvider
+ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-21:20
+	android:grantUriPermissions
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+	tools:replace
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-48
+	android:name
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-20:53
+	android:resource
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-50
+	android:name
+		ADDED from [:open_file] D:\Applications\Flutter Projects\qrcode_scanner\build\open_file\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-67

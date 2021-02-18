@@ -4947,6 +4947,7 @@ public final class R {
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f0c0000;
+    public static final int qr=0x7f0c0001;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0d0000;
@@ -17387,5 +17388,8 @@ public final class R {
      * @attr name android:inflatedId
      */
     public static final int ViewStubCompat_android_inflatedId=2;
+  }
+  public static final class xml {
+    public static final int filepaths=0x7f100000;
   }
 }

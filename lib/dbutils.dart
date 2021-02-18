@@ -58,7 +58,9 @@ class DBUtils {
 
   Future<int> updateQRCode(QRCode qrcode) async {
     Database db = await database;
-    return await db.update(QRCode.tblName, qrcode.toMap());
+    return await db.update(QRCode.tblName, qrcode.toMap(), where: '${QRCode.colId} = ?', whereArgs: [
+      qrcode.id
+    ]);
   }
 
   Future<int> deleteQRCode(int id) async {
