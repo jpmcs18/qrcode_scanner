@@ -40,7 +40,6 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.all(10),
         child: ListView.builder(
           itemCount: _qrcodes.length,
           itemBuilder: (context, index) {
@@ -48,14 +47,32 @@ class _HomePageState extends State<HomePage> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
               child: InkWell(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                     return Scanner(qrcode: _qrcodes[index]);
                   })).then((value) => _getQRCodes());
                 },
-                child: Container(
+                child: Dismissible(
+                  direction: DismissDirection.endToStart,
+                  key: Key(_qrcodes[index].code),
+                  onDismissed: (direction) {
+                    if (direction == DismissDirection.endToStart) _deleteQRCode(_qrcodes[index]);
+                  },
+                  background: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                        color: Colors.red,
+                      child: Container(
+                        alignment: Alignment.centerRight,
+                        padding: EdgeInsets.all(25),
+                        child: Icon(
+                          Icons.delete,
+                          color: Colors.white,
+                        ),
+                      )),
+                  child: Container(
                     padding: EdgeInsets.all(5),
                     child: Row(
                       children: [
@@ -79,7 +96,9 @@ class _HomePageState extends State<HomePage> {
                           ],
                         ))
                       ],
-                    )),
+                    ),
+                  ),
+                ),
               ),
               elevation: 10,
             );
@@ -114,6 +133,13 @@ class _HomePageState extends State<HomePage> {
     var res = await _db.getQRCodes();
     setState(() {
       _qrcodes = res;
+    });
+  }
+
+  _deleteQRCode(QRCode qrcode) async {
+    await _db.deleteQRCode(qrcode.id);
+    setState(() {
+      _qrcodes.remove(qrcode);
     });
   }
 }
