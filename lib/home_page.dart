@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
 
   _getPermissions() async {
     final permissions = await Permission.getPermissionsStatus([
-      PermissionName.Storage
+      PermissionName.Storage,
     ]);
     var request = true;
     switch (permissions[0].permissionStatus) {

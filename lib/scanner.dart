@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qrcode_scanner/dbutils.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -53,7 +54,10 @@ class _ScannerState extends State<Scanner> {
             IconButton(
                 icon: Icon(Icons.qr_code_scanner),
                 onPressed: () async {
-                  var res = await BarcodeScanner.scan();
+                  // var res = await BarcodeScanner.scan();
+                  var res = await FlutterBarcodeScanner.scanBarcode(
+          "#ff6666", "Cancel", true, ScanMode.QR);
+
                   setState(() {
                     _qrcode.code = res;
                     _ctrlCode.text = res;
@@ -73,7 +77,7 @@ class _ScannerState extends State<Scanner> {
                 decoration: InputDecoration(labelText: 'Title'),
                 controller: _ctrlTitle,
                 onChanged: (val) {
-                  setState(() { 
+                  setState(() {
                     _qrcode.title = val;
                   });
                 },
