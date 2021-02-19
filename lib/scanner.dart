@@ -2,16 +2,20 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 
+import 'package:esys_flutter_share/esys_flutter_share.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
-import 'package:permission/permission.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qrcode_scanner/dbutils.dart';
 import 'package:qrcode_scanner/folder_browser.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_qr_reader/flutter_qr_reader.dart';
 
 import 'models/qrcode.dart';
+import 'package:qr_code_tools/qr_code_tools.dart';
+import 'package:flutter/services.dart';
 
 class Scanner extends StatefulWidget {
   Scanner({this.qrcode});
@@ -25,6 +29,7 @@ class _ScannerState extends State<Scanner> {
   DBUtils _db = DBUtils.instance;
   QRCode _qrcode = QRCode();
   Directory pickedDirectory;
+  String _qrcodeFilePath;
 
   GlobalKey globalKey = new GlobalKey();
   final _ctrlTitle = TextEditingController();
@@ -46,6 +51,16 @@ class _ScannerState extends State<Scanner> {
         title: Row(
           children: [
             Expanded(child: Text('Scanner')),
+            IconButton(
+                icon: Icon(Icons.upload_file),
+                onPressed: () {
+                  _getImage();
+                }),
+            IconButton(
+                icon: Icon(Icons.share),
+                onPressed: () {
+                  _shareQRCode();
+                }),
             IconButton(
                 icon: Icon(Icons.file_download),
                 onPressed: () {
@@ -74,8 +89,7 @@ class _ScannerState extends State<Scanner> {
         margin: EdgeInsets.all(5),
         child: Container(
           padding: EdgeInsets.all(10),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: ListView(
             children: [
               TextField(
                 decoration: InputDecoration(labelText: 'Title'),
@@ -100,14 +114,18 @@ class _ScannerState extends State<Scanner> {
               SizedBox(
                 height: 20,
               ),
-              Expanded(
-                child: InkWell(
-                  child: RepaintBoundary(child: QrImage(data: _qrcode.code, padding: EdgeInsets.all(10), backgroundColor: Colors.white), key: globalKey),
-                  onTap: () {
-                    _tryBrowse(_qrcode.code);
-                  },
-                ),
-              )
+              InkWell(
+                child: RepaintBoundary(
+                    child: QrImage(
+                      data: _qrcode.code,
+                      padding: EdgeInsets.all(10),
+                      backgroundColor: Colors.white,
+                    ),
+                    key: globalKey),
+                onTap: () {
+                  _tryBrowse(_qrcode.code);
+                },
+              ),
             ],
           ),
         ),
@@ -140,37 +158,38 @@ class _ScannerState extends State<Scanner> {
   }
 
   _exportQRCode() async {
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (BuildContext context) {
-          return FolderBrowser(_getQRImage());
-      }));
+    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+      return FolderBrowser(_getQRImage());
+    }));
   }
-  Future<Uint8List> _getQRImage() async {
-      RenderRepaintBoundary boundary = globalKey.currentContext.findRenderObject();
-      var image = await boundary.toImage();
-      ByteData byteData = await image.toByteData(format: ImageByteFormat.png);
-      return byteData.buffer.asUint8List();
-  }
-  Future<bool> _requestPersmission(PermissionName permission) async {
-    List<Permissions> p = await Permission.getPermissionsStatus([
-      permission,
-    ]);
-    var request = true;
-    switch (p[0].permissionStatus) {
-      case PermissionStatus.allow:
-        request = false;
-        break;
-      case PermissionStatus.always:
-        request = false;
-        break;
-      default:
-    }
-    if (request) {
-      p = await Permission.requestPermissions([
-        permission
-      ]);
-    }
 
-    return p[0].permissionStatus == PermissionStatus.allow || p[0].permissionStatus == PermissionStatus.always;
+  _shareQRCode() async {
+    await Share.file('Share this thing', 'qrcode.png', await _getQRImage(), 'image/png');
+  }
+
+  _getImage() async {
+    final picker = ImagePicker();
+    final pickedFile = await picker.getImage(source: ImageSource.gallery);
+
+    if (pickedFile != null) {
+      await _uploadQRCode(pickedFile.path);
+    } else {
+      print('No image selected.');
+    }
+  }
+
+  _uploadQRCode(String file) async {
+    var qr = await QrCodeToolsPlugin.decodeFrom(file);
+    setState(() {
+      _qrcode.code = qr;
+      _ctrlCode.text = qr;
+    });
+  }
+
+  Future<Uint8List> _getQRImage() async {
+    RenderRepaintBoundary boundary = globalKey.currentContext.findRenderObject();
+    var image = await boundary.toImage();
+    ByteData byteData = await image.toByteData(format: ImageByteFormat.png);
+    return byteData.buffer.asUint8List();
   }
 }

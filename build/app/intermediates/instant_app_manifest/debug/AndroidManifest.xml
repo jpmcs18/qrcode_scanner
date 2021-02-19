@@ -20,7 +20,9 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <uses-permission android:name="android.permission.FLASHLIGHT" />
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
 
     <application
         android:name="io.flutter.app.FlutterApplication"
@@ -76,19 +78,30 @@
         <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
 
         <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.qrcode_scanner.fileProvider"
+            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+            android:authorities="com.example.qrcode_scanner.flutter.image_provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
+                android:resource="@xml/flutter_image_picker_file_paths" />
         </provider>
 
         <activity
             android:name="io.flutter.plugins.urllauncher.WebViewActivity"
             android:exported="false"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <provider
+            android:name="de.esys.esysfluttershare.EsysFlutterShareFileProvider"
+            android:authorities="com.example.qrcode_scanner.fileprovider.github.com/orgs/esysberlin/esys-flutter-share"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/esys_flutter_share_filepaths" />
+        </provider>
+
         <activity android:name="de.mintware.barcode_scan.BarcodeScannerActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

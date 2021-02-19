@@ -71,13 +71,15 @@ class _HomePageState extends State<HomePage> {
                         ),
                       )),
                   child: Container(
+                    margin: EdgeInsets.all(10),
                     padding: EdgeInsets.all(5),
                     child: Row(
                       children: [
                         QrImage(
+                          padding: EdgeInsets.all(10),
                           data: _qrcodes[index].code,
                           backgroundColor: Colors.white,
-                          size: 80,
+                          size: 90,
                         ),
                         SizedBox(
                           width: 10,

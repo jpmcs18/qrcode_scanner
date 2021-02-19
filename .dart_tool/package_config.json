@@ -50,10 +50,10 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "dio",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/dio-3.0.10",
+      "name": "esys_flutter_share",
+      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/esys_flutter_share-1.0.2",
       "packageUri": "lib/",
-      "languageVersion": "2.4"
+      "languageVersion": "2.0"
     },
     {
       "name": "ext_storage",
@@ -80,24 +80,6 @@
       "languageVersion": "2.2"
     },
     {
-      "name": "filesize",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/filesize-1.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
-      "name": "filesystem_picker",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/filesystem_picker-1.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.6"
-    },
-    {
-      "name": "filex",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/filex-0.2.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.2"
-    },
-    {
       "name": "flutter",
       "rootUri": "file:///F:/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -110,22 +92,16 @@
       "languageVersion": "2.1"
     },
     {
-      "name": "flutter_file_manager",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_file_manager-0.2.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
       "name": "flutter_plugin_android_lifecycle",
       "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
     {
-      "name": "flutter_slidable",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_slidable-0.5.7",
+      "name": "flutter_qr_reader",
+      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_qr_reader-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "1.19"
+      "languageVersion": "2.2"
     },
     {
       "name": "flutter_test",
@@ -140,10 +116,10 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "folder_picker",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/folder_picker-0.3.0",
+      "name": "http",
+      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/http-0.12.2",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.4"
     },
     {
       "name": "http_parser",
@@ -156,6 +132,18 @@
       "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/image_gallery_saver-1.6.7",
       "packageUri": "lib/",
       "languageVersion": "2.1"
+    },
+    {
+      "name": "image_picker",
+      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/image_picker-0.6.7+22",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
+      "name": "image_picker_platform_interface",
+      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/image_picker_platform_interface-1.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.5"
     },
     {
       "name": "intl",
@@ -174,12 +162,6 @@
       "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/meta-1.3.0-nullsafety.3",
       "packageUri": "lib/",
       "languageVersion": "2.10"
-    },
-    {
-      "name": "open_file",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/open_file-2.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
     },
     {
       "name": "path",
@@ -272,16 +254,16 @@
       "languageVersion": "2.6"
     },
     {
+      "name": "qr_code_tools",
+      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/qr_code_tools-0.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "qr_flutter",
       "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/qr_flutter-3.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.6"
-    },
-    {
-      "name": "rxdart",
-      "rootUri": "file:///C:/Users/ICTO%20JOHN%20PAUL/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/rxdart-0.22.6",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
     },
     {
       "name": "sky_engine",
@@ -410,7 +392,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-02-19T03:35:11.346348Z",
+  "generated": "2021-02-19T07:09:27.102933Z",
   "generator": "pub",
   "generatorVersion": "2.10.5"
 }

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'QRCode Scanner',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),

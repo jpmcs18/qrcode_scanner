@@ -18123,6 +18123,7 @@ public final class R {
     public static final int ViewStubCompat_android_inflatedId=2;
   }
   public static final class xml {
-    public static final int filepaths=0x7f100000;
+    public static final int esys_flutter_share_filepaths=0x7f100000;
+    public static final int flutter_image_picker_file_paths=0x7f100001;
   }
 }

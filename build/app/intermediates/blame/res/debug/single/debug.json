@@ -524,6 +524,10 @@
         "source": "C:\\Users\\ICTO JOHN PAUL\\.gradle\\caches\\transforms-2\\files-2.1\\db2388f0fe5e05a7a168e5a9c11e912f\\material-1.0.0\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
+        "merged": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\res\\merged\\debug\\xml_flutter_image_picker_file_paths.xml.flat",
+        "source": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\image_picker\\intermediates\\packaged_res\\debug\\xml\\flutter_image_picker_file_paths.xml"
+    },
+    {
         "merged": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\res\\merged\\debug\\interpolator_btn_radio_to_off_mtrl_animation_interpolator_0.xml.flat",
         "source": "C:\\Users\\ICTO JOHN PAUL\\.gradle\\caches\\transforms-2\\files-2.1\\7def8d6c3751559765cf68c2d5a2dddd\\appcompat-1.1.0\\res\\interpolator\\btn_radio_to_off_mtrl_animation_interpolator_0.xml"
     },
@@ -694,6 +698,10 @@
     {
         "merged": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
         "source": "C:\\Users\\ICTO JOHN PAUL\\.gradle\\caches\\transforms-2\\files-2.1\\6d35bbbe327ef689c582d1173367f0ed\\media-1.0.0\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\res\\merged\\debug\\xml_esys_flutter_share_filepaths.xml.flat",
+        "source": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\esys_flutter_share\\intermediates\\packaged_res\\debug\\xml\\esys_flutter_share_filepaths.xml"
     },
     {
         "merged": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -1910,10 +1918,6 @@
     {
         "merged": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ICTO JOHN PAUL\\.gradle\\caches\\transforms-2\\files-2.1\\7def8d6c3751559765cf68c2d5a2dddd\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\res\\merged\\debug\\xml_filepaths.xml.flat",
-        "source": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\open_file\\intermediates\\packaged_res\\debug\\xml\\filepaths.xml"
     },
     {
         "merged": "D:\\Applications\\Flutter Projects\\qrcode_scanner\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
