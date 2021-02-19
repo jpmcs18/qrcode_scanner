@@ -6,7 +6,6 @@ import 'package:ext_storage/ext_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:qr_flutter/qr_flutter.dart';
 
 class FolderBrowser extends StatefulWidget {
   FolderBrowser(this.qrcode);
