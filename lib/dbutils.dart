@@ -22,7 +22,6 @@ class DBUtils {
   _initializeDB() async {
     Directory appDir = await getApplicationDocumentsDirectory();
     String dbPath = join(appDir.path, _dbname);
-    print(dbPath);
     return await openDatabase(dbPath, onCreate: _onCreate, version: _version);
   }
 
@@ -46,7 +45,6 @@ class DBUtils {
 
   Future<List<QRCode>> getQRCodes() async {
     Database db = await database;
-    print(db);
     List<Map> res = await db.query(QRCode.tblName);
     return res.length == 0 ? [] : res.map((e) => QRCode.fromMap(e)).toList();
   }

@@ -1,10 +1,14 @@
 import 'dart:io';
+import 'dart:typed_data';
+import 'dart:ui';
 
-import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:permission/permission.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qrcode_scanner/dbutils.dart';
+import 'package:qrcode_scanner/folder_browser.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'models/qrcode.dart';
@@ -22,6 +26,7 @@ class _ScannerState extends State<Scanner> {
   QRCode _qrcode = QRCode();
   Directory pickedDirectory;
 
+  GlobalKey globalKey = new GlobalKey();
   final _ctrlTitle = TextEditingController();
   final _ctrlCode = TextEditingController();
   @override
@@ -41,11 +46,11 @@ class _ScannerState extends State<Scanner> {
         title: Row(
           children: [
             Expanded(child: Text('Scanner')),
-            // IconButton(
-            //     icon: Icon(Icons.file_download),
-            //     onPressed: () {
-            //       _exportQRCode();
-            //     }),
+            IconButton(
+                icon: Icon(Icons.file_download),
+                onPressed: () {
+                  _exportQRCode();
+                }),
             IconButton(
                 icon: Icon(Icons.save),
                 onPressed: () {
@@ -55,8 +60,7 @@ class _ScannerState extends State<Scanner> {
                 icon: Icon(Icons.qr_code_scanner),
                 onPressed: () async {
                   // var res = await BarcodeScanner.scan();
-                  var res = await FlutterBarcodeScanner.scanBarcode(
-          "#ff6666", "Cancel", true, ScanMode.QR);
+                  var res = await FlutterBarcodeScanner.scanBarcode("#ff6666", "Cancel", true, ScanMode.QR);
 
                   setState(() {
                     _qrcode.code = res;
@@ -98,7 +102,7 @@ class _ScannerState extends State<Scanner> {
               ),
               Expanded(
                 child: InkWell(
-                  child: QrImage(data: _qrcode.code, padding: EdgeInsets.all(10), backgroundColor: Colors.white),
+                  child: RepaintBoundary(child: QrImage(data: _qrcode.code, padding: EdgeInsets.all(10), backgroundColor: Colors.white), key: globalKey),
                   onTap: () {
                     _tryBrowse(_qrcode.code);
                   },
@@ -135,20 +139,38 @@ class _ScannerState extends State<Scanner> {
     Navigator.of(context).pop();
   }
 
-  // _exportQRCode() async {
-  //   // String path = await FilesystemPicker.open(title: 'Open file', context: context, fsType: FilesystemType.folder, pickText: 'Save file to this folder', rootDirectory: await getExternalStorageDirectory());
+  _exportQRCode() async {
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (BuildContext context) {
+          return FolderBrowser(_getQRImage());
+      }));
+  }
+  Future<Uint8List> _getQRImage() async {
+      RenderRepaintBoundary boundary = globalKey.currentContext.findRenderObject();
+      var image = await boundary.toImage();
+      ByteData byteData = await image.toByteData(format: ImageByteFormat.png);
+      return byteData.buffer.asUint8List();
+  }
+  Future<bool> _requestPersmission(PermissionName permission) async {
+    List<Permissions> p = await Permission.getPermissionsStatus([
+      permission,
+    ]);
+    var request = true;
+    switch (p[0].permissionStatus) {
+      case PermissionStatus.allow:
+        request = false;
+        break;
+      case PermissionStatus.always:
+        request = false;
+        break;
+      default:
+    }
+    if (request) {
+      p = await Permission.requestPermissions([
+        permission
+      ]);
+    }
 
-  //   // print(path);
-  //   var dir = await getApplicationDocumentsDirectory();
-  //   print(dir.path);
-  //   Navigator.of(context).push<FolderPickerPage>(MaterialPageRoute(builder: (BuildContext context) {
-  //     return FolderPickerPage(
-  //         rootDirectory: dir,
-  //         action: (BuildContext context, Directory folder) async {
-  //           print("Picked directory $folder");
-  //           setState(() => pickedDirectory = folder);
-  //           Navigator.of(context).pop();
-  //         });
-  //   }));
-  // }
+    return p[0].permissionStatus == PermissionStatus.allow || p[0].permissionStatus == PermissionStatus.always;
+  }
 }

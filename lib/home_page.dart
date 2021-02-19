@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:permission/permission.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qrcode_scanner/models/qrcode.dart';
 import 'package:qrcode_scanner/scanner.dart';
@@ -19,7 +18,6 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     _getQRCodes();
-    _getPermissions();
   }
 
   @override
@@ -106,27 +104,6 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-  }
-
-  _getPermissions() async {
-    final permissions = await Permission.getPermissionsStatus([
-      PermissionName.Storage,
-    ]);
-    var request = true;
-    switch (permissions[0].permissionStatus) {
-      case PermissionStatus.allow:
-        request = false;
-        break;
-      case PermissionStatus.always:
-        request = false;
-        break;
-      default:
-    }
-    if (request) {
-      await Permission.requestPermissions([
-        PermissionName.Storage
-      ]);
-    }
   }
 
   _getQRCodes() async {
