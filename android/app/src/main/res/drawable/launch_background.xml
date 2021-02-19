@@ -7,6 +7,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/qr" />
+            android:src="@mipmap/qrcode_icon_trans" />
     </item>
 </layer-list>
