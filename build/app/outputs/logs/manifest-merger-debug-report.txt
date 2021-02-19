@@ -149,7 +149,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\IC
 	android:largeHeap
 		ADDED from [:flutter_barcode_scanner] D:\Applications\Flutter Projects\qrcode_scanner\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-33
 	android:icon
-		ADDED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:18:9-34
+		ADDED from D:\Applications\Flutter Projects\qrcode_scanner\android\app\src\main\AndroidManifest.xml:18:9-49
 	android:theme
 		ADDED from [:flutter_barcode_scanner] D:\Applications\Flutter Projects\qrcode_scanner\build\flutter_barcode_scanner\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-59
 	android:name

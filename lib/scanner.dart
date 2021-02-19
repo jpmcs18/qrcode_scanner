@@ -11,7 +11,6 @@ import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qrcode_scanner/dbutils.dart';
 import 'package:qrcode_scanner/folder_browser.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter_qr_reader/flutter_qr_reader.dart';
 
 import 'models/qrcode.dart';
 import 'package:qr_code_tools/qr_code_tools.dart';
@@ -47,25 +46,34 @@ class _ScannerState extends State<Scanner> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: Card(
+        child: Row(
+          children: [
+            Expanded(
+                child: IconButton(
+                    icon: Icon(Icons.upload_file),
+                    onPressed: () {
+                      _getImage();
+                    })),
+            Expanded(
+                child: IconButton(
+                    icon: Icon(Icons.share),
+                    onPressed: () {
+                      _shareQRCode();
+                    })),
+            Expanded(
+                child: IconButton(
+                    icon: Icon(Icons.file_download),
+                    onPressed: () {
+                      _exportQRCode();
+                    })),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Row(
           children: [
             Expanded(child: Text('Scanner')),
-            IconButton(
-                icon: Icon(Icons.upload_file),
-                onPressed: () {
-                  _getImage();
-                }),
-            IconButton(
-                icon: Icon(Icons.share),
-                onPressed: () {
-                  _shareQRCode();
-                }),
-            IconButton(
-                icon: Icon(Icons.file_download),
-                onPressed: () {
-                  _exportQRCode();
-                }),
             IconButton(
                 icon: Icon(Icons.save),
                 onPressed: () {
@@ -86,7 +94,6 @@ class _ScannerState extends State<Scanner> {
         ),
       ),
       body: Card(
-        margin: EdgeInsets.all(5),
         child: Container(
           padding: EdgeInsets.all(10),
           child: ListView(
@@ -135,7 +142,6 @@ class _ScannerState extends State<Scanner> {
 
   _tryBrowse(url) async {
     if (await canLaunch(url)) {
-      print('asd');
       await launch(url);
     }
     print(url);

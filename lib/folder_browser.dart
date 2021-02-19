@@ -17,7 +17,9 @@ class FolderBrowser extends StatefulWidget {
 class _FolderBrowserState extends State<FolderBrowser> {
   List<Directory> folders = [];
   Directory dir;
+  List<Directory> selectedDir = [];
   Future<Uint8List> _qrCode;
+  int cnt = 0;
   final _ctrlFileName = TextEditingController();
 
   @override
@@ -38,41 +40,60 @@ class _FolderBrowserState extends State<FolderBrowser> {
             Expanded(child: Text('Select Folder'))
           ],
         ),
+        
       ),
       body: Column(children: [
-        Row(children: [
-          Expanded(
-              child: Card(
-            child: InkWell(
-              child: Container(
-                margin: EdgeInsets.all(5),
-                child: Text(dir == null ? '' : dir.path, style: TextStyle(fontSize: 20.0)),
-                alignment: Alignment.centerLeft,
-              ),
-              onTap: () {
-                _getFolder(dir.parent);
-              },
+        Container(
+          alignment: Alignment.centerLeft,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: selectedDir.map((e) {
+                var normal = Paint();
+                normal.color = Colors.white;
+                var current = Paint();
+                current.color = Colors.blue;
+                var w = Container(
+                    child: Row(children: [
+                  Icon(Icons.arrow_right),
+                  InkWell(
+                    child: Container(
+                      child: Text(
+                        basename(e.path),
+                        style: TextStyle(foreground: (cnt != selectedDir.length - 1) ? normal : current),
+                      ),
+                      margin: EdgeInsets.all(5),
+                    ),
+                    onTap: () {
+                      _getFolder(e);
+                    },
+                  )
+                ]));
+
+                setState(() {
+                  cnt++;
+                });
+
+                return w;
+              }).toList(),
             ),
-          ))
-        ]),
+          ),
+        ),
         Expanded(
             child: ListView.builder(
                 itemCount: folders.length,
                 itemBuilder: (context, index) {
-                  return Card(
-                    margin: EdgeInsets.all(5),
-                    child: InkWell(
-                      child: Container(
-                        child: Text(
-                          basename(folders[index].path),
-                          style: TextStyle(fontSize: 25.0),
-                        ),
-                        margin: EdgeInsets.all(5),
+                  return ListTile(
+                    leading: Icon(Icons.folder),
+                    title: Container(
+                      child: Text(
+                        basename(folders[index].path),
                       ),
-                      onTap: () {
-                        _getFolder(folders[index]);
-                      },
+                      margin: EdgeInsets.all(5),
                     ),
+                    onTap: () {
+                      _getFolder(folders[index]);
+                    },
                   );
                 })),
         Card(
@@ -88,7 +109,7 @@ class _FolderBrowserState extends State<FolderBrowser> {
                 IconButton(
                     icon: Icon(Icons.save),
                     onPressed: () {
-                      _sqveQRCode(context);
+                      _saveQRCode(context);
                     })
               ],
             ),
@@ -118,6 +139,7 @@ class _FolderBrowserState extends State<FolderBrowser> {
       setState(() {
         dir = directory;
         folders = d;
+        _breakDownFolder();
       });
     } else {
       Permission.storage.request();
@@ -125,7 +147,18 @@ class _FolderBrowserState extends State<FolderBrowser> {
     }
   }
 
-  _sqveQRCode(context) async {
+  _breakDownFolder() {
+    selectedDir.clear();
+    cnt = 0;
+    List<String> folders = dir.path.split('/');
+    String str = '';
+    for (int i = 1; i < folders.length; i++) {
+      str += '/' + folders[i];
+      if (i > 2) selectedDir.add(Directory(str));
+    }
+  }
+
+  _saveQRCode(context) async {
     var path = join(dir.path, '${_ctrlFileName.text}.png');
 
     final file = await new File(path).create();

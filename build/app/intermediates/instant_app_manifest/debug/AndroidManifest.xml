@@ -28,7 +28,7 @@
         android:name="io.flutter.app.FlutterApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/qr"
+        android:icon="@mipmap/qrcode_icon_trans"
         android:label="QRCode Scanner"
         android:largeHeap="true"
         android:requestLegacyExternalStorage="true"
