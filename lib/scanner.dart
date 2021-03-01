@@ -28,7 +28,7 @@ class _ScannerState extends State<Scanner> {
   DBUtils _db = DBUtils.instance;
   QRCode _qrcode = QRCode();
   Directory pickedDirectory;
-  String _qrcodeFilePath;
+  //String _qrcodeFilePath;
 
   GlobalKey globalKey = new GlobalKey();
   final _ctrlTitle = TextEditingController();
@@ -83,7 +83,8 @@ class _ScannerState extends State<Scanner> {
                 icon: Icon(Icons.qr_code_scanner),
                 onPressed: () async {
                   // var res = await BarcodeScanner.scan();
-                  var res = await FlutterBarcodeScanner.scanBarcode("#ff6666", "Cancel", true, ScanMode.QR);
+                  var res = await FlutterBarcodeScanner.scanBarcode(
+                      "#ff6666", "Cancel", true, ScanMode.QR);
 
                   setState(() {
                     _qrcode.code = res;
@@ -148,7 +149,7 @@ class _ScannerState extends State<Scanner> {
   }
 
   _saveQRCode() async {
-    int x = 0;
+    int x;
     if (_qrcode.id == null)
       x = await _db.insertQRCode(_qrcode);
     else
@@ -164,13 +165,15 @@ class _ScannerState extends State<Scanner> {
   }
 
   _exportQRCode() async {
-    Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (BuildContext context) {
       return FolderBrowser(_getQRImage());
     }));
   }
 
   _shareQRCode() async {
-    await Share.file('Share this thing', 'qrcode.png', await _getQRImage(), 'image/png');
+    await Share.file(
+        'Share this thing', 'qrcode.png', await _getQRImage(), 'image/png');
   }
 
   _getImage() async {
@@ -193,7 +196,8 @@ class _ScannerState extends State<Scanner> {
   }
 
   Future<Uint8List> _getQRImage() async {
-    RenderRepaintBoundary boundary = globalKey.currentContext.findRenderObject();
+    RenderRepaintBoundary boundary =
+        globalKey.currentContext.findRenderObject();
     var image = await boundary.toImage();
     ByteData byteData = await image.toByteData(format: ImageByteFormat.png);
     return byteData.buffer.asUint8List();
