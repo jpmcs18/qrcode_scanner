@@ -35,13 +35,9 @@ class _FolderBrowserState extends State<FolderBrowser> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          children: [
-            Expanded(child: Text('Select Folder'))
-          ],
-        ),
-        
-      ),
+          title: Row(
+        children: [Expanded(child: Text('Select Folder'))],
+      )),
       body: Column(children: [
         Container(
           alignment: Alignment.centerLeft,
@@ -60,7 +56,10 @@ class _FolderBrowserState extends State<FolderBrowser> {
                     child: Container(
                       child: Text(
                         basename(e.path),
-                        style: TextStyle(foreground: (cnt != selectedDir.length - 1) ? normal : current),
+                        style: TextStyle(
+                            foreground: (cnt != selectedDir.length - 1)
+                                ? normal
+                                : current),
                       ),
                       margin: EdgeInsets.all(5),
                     ),
@@ -131,7 +130,8 @@ class _FolderBrowserState extends State<FolderBrowser> {
           .list()
           .asyncMap((event) async {
             var p = Directory(event.path);
-            if ((await FileSystemEntity.type(p.path)) == FileSystemEntityType.directory) return p;
+            if ((await FileSystemEntity.type(p.path)) ==
+                FileSystemEntityType.directory) return p;
             return null;
           })
           .where((event) => event != null)
@@ -169,6 +169,7 @@ class _FolderBrowserState extends State<FolderBrowser> {
 
   Future<void> writeToFile(ByteData data, String path) async {
     final buffer = data.buffer;
-    await File(path).writeAsBytes(buffer.asUint8List(data.offsetInBytes, data.lengthInBytes));
+    await File(path).writeAsBytes(
+        buffer.asUint8List(data.offsetInBytes, data.lengthInBytes));
   }
 }
